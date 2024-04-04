@@ -42,12 +42,12 @@
 
 
 
-// Get the necessary elements
+
 const taskInput = document.getElementById('task-input');
 const addBtn = document.getElementById('add-btn');
 const taskList = document.getElementById('task-list');
 
-// Add task to the list
+
 function addTask() {
     const taskText = taskInput.value;
 
@@ -68,11 +68,11 @@ function addTask() {
     }
 }
 
-// Remove task from the list
+
 function removeTask(event) {
     const taskItem = event.target.parentElement;
     taskList.removeChild(taskItem);
 }
 
-// Event listener for add task button
+
 addBtn.addEventListener('click', addTask);
